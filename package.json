@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "watch:css": "npx tailwindcss -i style.css -o ./public/output.css --watch",
+    "watch:css": "npx tailwindcss -i style.css -o ./assets/output.css --watch",
     "start": "concurrently -n 'CSS,APP' -c 'bgBlue.bold,bgGreen.bold' 'yarn run watch:css' 'yarn run dev'",
     "build": "vite build",
     "preview": "vite preview"
