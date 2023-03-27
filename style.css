@@ -6,20 +6,47 @@
   .card {
     @apply bg-gray-50 border border-gray-500 rounded-3xl p-8 dark:bg-gray-700 dark:border-gray-300 dark:text-gray-100;
   }
+  .inner-card {
+    @apply bg-gray-300 border rounded-3xl p-4 dark:bg-gray-800 dark:text-gray-100;
+  }
 }
 
-main {
+main,
+header {
   width: 95%;
-  max-width: 400px;
+  max-width: 315px;
+}
+.card-top-icon {
+  left: 3rem;
+}
+
+.transparent-circle {
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  transform: rotate(48deg);
+}
+
+.inner-circle {
+  width: 5.8rem;
+  height: 5.8rem;
 }
 
 @media (min-width: 640px) {
-  main {
+  main,
+  header {
     max-width: 500px;
+  }
+  .card-top-icon {
+    left: 5.7rem;
   }
 }
 @media (min-width: 768px) {
-  main {
+  main,
+  header {
     max-width: 700px;
+  }
+  .card-top-icon {
+    left: 3.4rem;
   }
 }
